@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump Rope Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jump Rope Counter</h1>
+        
+        <div class="tracking-sections">
+            <!-- Jumps Section -->
+            <div class="section jumps-section">
+                <h2>Jump Counter</h2>
+                <div class="input-section">
+                    <input type="number" id="jumpInput" placeholder="Enter number of jumps" min="0">
+                    <div class="input-buttons">
+                        <button id="addJumpsBtn">Add (+)</button>
+                        <button id="decreaseJumpsBtn">Decrease (-)</button>
+                    </div>
+                </div>
+                <div class="counter-display">
+                    <span id="count">0</span>
+                    <p>jumps</p>
+                </div>
+            </div>
+
+            <!-- Time Section -->
+            <div class="section time-section">
+                <h2>Time Tracker</h2>
+                <div class="input-section">
+                    <input type="number" id="timeInput" placeholder="Enter minutes" min="0">
+                    <div class="input-buttons">
+                        <button id="addTimeBtn">Add (+)</button>
+                        <button id="decreaseTimeBtn">Decrease (-)</button>
+                    </div>
+                </div>
+                <div class="time-display">
+                    <span id="totalTime">00:00</span>
+                    <p>total time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn">Start</button>
+            <button id="stopBtn">Stop</button>
+            <button id="resetBtn">Reset All</button>
+        </div>
+
+        <div class="stats">
+            <div class="time">Session Time: <span id="timer">00:00</span></div>
+            <div class="speed">Jumps per minute: <span id="speed">0</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
